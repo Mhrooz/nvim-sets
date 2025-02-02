@@ -1,3 +1,7 @@
+vim.opt.tabstop=4
+vim.opt.shiftwidth=4
+vim.opt.expandtab=true
+
 vim.o.number = true
 vim.o.relativenumber = true
 -- 自动安装 packer.nvim（可选）
@@ -44,6 +48,9 @@ require('packer').startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use { 'nvim-lua/plenary.nvim'}
 
+  -- support beancount
+  use 'nathangrigg/vim-beancount'
+
   -- Treesitter 语法高亮
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -68,5 +75,6 @@ require("nvim-themes")
 require("lsp-cmp")
 require("folder-tree")
 require("find-global")
+require("bcount")
 
 
