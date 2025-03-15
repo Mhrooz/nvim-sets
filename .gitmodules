@@ -1,0 +1,6 @@
+[submodule "pack/github/start/copilot.vim"]
+	path = pack/github/start/copilot.vim
+	url = https://github.com/github/copilot.vim
+[submodule "plugin/vim-p4-syntax"]
+	path = plugin/vim-p4-syntax
+	url = https://github.com/rightson/vim-p4-syntax
