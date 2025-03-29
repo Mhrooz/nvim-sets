@@ -1,6 +1,7 @@
 vim.opt.tabstop=4
 vim.opt.shiftwidth=4
 vim.opt.expandtab=true
+vim.opt.cursorline=true
 
 vim.o.number = true
 vim.o.relativenumber = true
@@ -26,6 +27,7 @@ require('packer').startup(function(use)
 
   -- LSP 配置
   use 'neovim/nvim-lspconfig'
+  use '/Users/hanzhangma/.config/nvim/plugin/vim-p4-syntax'
 
   -- 自动补全引擎及相关插件
   use 'hrsh7th/nvim-cmp'
@@ -57,9 +59,13 @@ require('packer').startup(function(use)
     run = ':TSUpdate'
   }
 
+  use 'akinsho/toggleterm.nvim'
+
 
   -- ALE 异步检查及实时编译
   use 'dense-analysis/ale'
+
+  use 'andweeb/presence.nvim'
 
   -- 如果需要调试支持，后续可以考虑使用 nvim-dap
   -- use 'mfussenegger/nvim-dap'
@@ -76,5 +82,7 @@ require("lsp-cmp")
 require("folder-tree")
 require("find-global")
 require("bcount")
+require("togglet")
+
 
 

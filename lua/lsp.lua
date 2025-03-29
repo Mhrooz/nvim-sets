@@ -42,7 +42,7 @@ nvim_lsp.cmake.setup{
 nvim_lsp.clangd.setup {
   on_attach = on_attach,
   flags = { debounce_text_changes = 150 },
-  cmd = { "clangd", "--compile-commands-dir=build", "--query-driver=/home/iicd/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-g++"},
+  cmd = { "clangd", "--compile-commands-dir=build"},
 }
 
 -- Python 配置（以 pyright 为例）
